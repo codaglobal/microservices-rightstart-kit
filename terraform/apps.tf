@@ -1,7 +1,7 @@
 
 resource "helm_release" "spring-service" {
   name    = "spring-service"
-  chart   = "../charts/spring-service"
+  chart   = "../helm-charts/spring-service"
   timeout = 600
   namespace = "mrk-app"
   depends_on = [
@@ -12,7 +12,7 @@ resource "helm_release" "spring-service" {
 
 resource "helm_release" "go-service" {
   name    = "go-service"
-  chart   = "../charts/go-service"
+  chart   = "../helm-charts/go-service"
   timeout = 600
   namespace = "mrk-app"
   depends_on = [
@@ -23,7 +23,7 @@ resource "helm_release" "go-service" {
 
 resource "helm_release" "python-service" {
   name    = "python-service"
-  chart   = "../charts/python-service"
+  chart   = "../helm-charts/python-service"
   timeout = 600
   namespace = "mrk-app"
   depends_on = [

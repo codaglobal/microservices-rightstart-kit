@@ -12,7 +12,7 @@ resource "helm_release" "ambassador" {
 
 resource "helm_release" "consul_resolver" {
   name    = "consul-resolver"
-  chart   = "../charts/ambassador-consul-resolver"
+  chart   = "../helm-charts/ambassador-consul-resolver"
   namespace = "ambassador"
   depends_on = [
     helm_release.ambassador
