@@ -1,0 +1,10 @@
+apiVersion: getambassador.io/v1
+kind: Mapping
+metadata:
+  name: {{ include "spring-service.fullname" . }}
+spec:
+  prefix: /api/spring-service/
+  service: {{ .Chart.Name }}
+  resolver: consul-dc1
+  load_balancer:
+    policy: round_robin
