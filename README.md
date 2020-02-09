@@ -27,4 +27,4 @@ Microservices simplified with Kubernetes + Consul +Ambassador + Spring + Python 
     └── tiller.tf
 ```
 
-### [Detailed information on how to setup this project and use it as a base for your microservices application is eleborated as a article. Click Here!] ()
+### [Detailed information on how to setup this project and use it as a base for your microservices application is elaborated as an article. Click Here!](https://medium.com/@arv14/microservices-simplified-with-kubernetes-consul-ambassador-spring-python-go-terraform-a94b7da8dcc0)
